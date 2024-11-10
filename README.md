@@ -1,43 +1,44 @@
-# CNN MNIST Training Visualization
+# 📊 CNN MNIST Training Visualization
+This project demonstrates a 4-layer Convolutional Neural Network (CNN) trained on the MNIST dataset with real-time visualization of training progress, including accuracy and loss tracking. It leverages PyTorch for model building and training, and Flask for an interactive web-based visualization interface.
 
-This project implements a 4-layer CNN trained on MNIST with real-time training visualization.
+## ✨ Key Features
+- 📈 **Real-time Accuracy and Loss Tracking**: See your model’s performance evolve as it trains.
+- 🎯 **Live Updates on Training and Validation Accuracy**: Focused on achieving 90-100% accuracy.
+- 🔄 **Interactive Progress Visualization**: View updates using interactive Plotly.js plots.
+- ⚙️ **Batch Processing Optimization**: Supports adjustable batch sizes, defaulted to 128.
+- 🎲 **Test Results on Random Images**: Observe final predictions on a set of random test images.
+- 🌐 **Clean, Responsive Web Interface**: Built with HTML/CSS and JavaScript for a smooth experience.
 
-## Requirements 
+## 🛠️ Tech Stack
+- **Frameworks and Libraries**: PyTorch, Flask, Plotly.js
+- **Additional Tools**: `tqdm` for progress bars, `matplotlib` for visualizations
+- **Hardware Support**: CUDA-enabled GPU for faster training (optional)
 
+## 📦 Requirements
+To install the dependencies, run:
 ```bash
-pip install torch torchvision numpy flask matplotlib tqdm
-```
-## Project Structure
-
-mnist_cnn/
-├── HowTo.md
-├── train.py
-├── model.py
-├── templates/
-│ └── index.html
-├── static/
-│ └── style.css
-└── server.py
+pip install torch torchvision numpy flask matplotlib tqdm requests
 ```
 
-## Running the Project
+## 🚀 Running the Project
 
-1. Start the Flask server:
+**1. Start the Flask server: Open a terminal and run:**
 
 ```bash
 python server.py
 ```
 
-2. In a new terminal, start the training:
-
+**2. Start the training: In a new terminal window, run:**
 ```bash
 python train.py
 ```
 
-3. Open your browser and navigate to:
-
+**3. Access the Real-Time Training Dashboard: Open a web browser and go to:**
+```bash
+http://127.0.0.1:9000
 ```
-http://127.0.0.1:5000
-``` 
 
-You will see real-time training progress, accuracy and loss curves, and final results on random test images.
+  
+## 🎥 Demo
+
+[![Watch the demo](https://img.youtube.com/vi/FeF3EwbDlmA/0.jpg)](https://www.youtube.com/watch?v=FeF3EwbDlmA)
